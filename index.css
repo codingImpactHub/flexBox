@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    text-align:center;
+}
+
+section{
+    background-color: bisque;
+    border:2px solid black;
+    width:90%;
+
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap:wrap-reverse; 
+    align-items: flex-end; 
+    align-content: space-between;
+}
+
+.con div{
+    border:1px solid black;
+    width:200px;
+    height:1px;
+    flex-basis: 100px;
+   
+}
+
+div:nth-of-type(2)
+{
+   flex-grow:1;
+}
+div:nth-of-type(1)
+{
+   flex-shrink:2;
+}
